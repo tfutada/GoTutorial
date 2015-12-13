@@ -33,8 +33,18 @@ func main() {
 		[]Developer{tom},
 	}
 
-	Println("David = ", david, "   Tom = ", tom)
+	Println("Tom   = ", tom)
+	Println("David = ", david)
+
 
 	enc := json.NewEncoder(os.Stdout)
 	enc.Encode(david)
 }
+
+
+
+
+
+
+
+

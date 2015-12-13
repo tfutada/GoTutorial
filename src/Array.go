@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// a string array
+	// a string list
 	var country = []string{"Japan", "Vietnam", "US",}
 
 	for idx, val := range country {
@@ -27,6 +27,7 @@ func main() {
 		}
 	}
 
-	fmt.Printf("Adults : %s", adults)
+	fmt.Printf("Adults : %s \n", adults)
+	fmt.Printf("Kids : %s \n", kids)
 }
 
