@@ -13,6 +13,7 @@ func (p Person) Fullname() string {
 	return p.first + " " + p.last
 }
 
+// Interface
 type Myname interface {
 	Fullname() string
 }
