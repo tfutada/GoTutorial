@@ -24,18 +24,19 @@ type Manager struct {
 func main() {
 
 	tom := Developer{
-		Person{"Tom", "Sandel", 21},
+		Person{"Tom", "Gates", 21},
 		[]string{"Java", "Scala"},
 	}
 
 	david := Manager{
-		Person{"David", "Sandel", 36},
+		Person{"David", "Jobs", 36},
 		[]Developer{tom},
 	}
 
 	Println("Tom   = ", tom)
 	Println("David = ", david)
 
+	Println("Tom Last name   = ", tom.Last)
 
 	enc := json.NewEncoder(os.Stdout)
 	enc.Encode(david)
