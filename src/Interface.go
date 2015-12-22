@@ -9,7 +9,7 @@ type Person struct {
 	last string
 }
 
-func (p Person) Fullname() string {
+func (p *Person) Fullname() string {
 	return p.first + " " + p.last
 }
 
